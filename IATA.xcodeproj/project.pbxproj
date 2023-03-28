@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		6E72913029D34A2D00B72673 /* IATAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E72912F29D34A2D00B72673 /* IATAApp.swift */; };
-		6E72913229D34A2D00B72673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E72913129D34A2D00B72673 /* ContentView.swift */; };
 		6E72913429D34A2E00B72673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E72913329D34A2E00B72673 /* Assets.xcassets */; };
 		6E72913729D34A2E00B72673 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E72913629D34A2E00B72673 /* Preview Assets.xcassets */; };
+		6E91C47E29D395D3008D47BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C47D29D395D3008D47BD /* MainView.swift */; };
+		6E91C48829D39685008D47BD /* AirportIATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E91C48729D39685008D47BD /* AirportIATA.json */; };
+		6E91C48A29D39CBD008D47BD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C48929D39CBD008D47BD /* MainViewModel.swift */; };
+		6E91C48F29D3A79F008D47BD /* AirportContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C48E29D3A79F008D47BD /* AirportContainer.swift */; };
+		6E91C49129D3A7B1008D47BD /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C49029D3A7B1008D47BD /* Airport.swift */; };
+		6E91C49329D3A7FD008D47BD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C49229D3A7FD008D47BD /* DummyData.swift */; };
+		6E91C49529D3A8D7008D47BD /* AirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C49429D3A8D7008D47BD /* AirportView.swift */; };
+		6E91C49829D3B251008D47BD /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91C49729D3B251008D47BD /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E72912C29D34A2D00B72673 /* IATA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IATA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E72912F29D34A2D00B72673 /* IATAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IATAApp.swift; sourceTree = "<group>"; };
-		6E72913129D34A2D00B72673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E72913329D34A2E00B72673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E72913629D34A2E00B72673 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E72913829D34A2E00B72673 /* IATA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IATA.entitlements; sourceTree = "<group>"; };
+		6E91C47D29D395D3008D47BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6E91C48729D39685008D47BD /* AirportIATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirportIATA.json; sourceTree = "<group>"; };
+		6E91C48929D39CBD008D47BD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6E91C48E29D3A79F008D47BD /* AirportContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportContainer.swift; sourceTree = "<group>"; };
+		6E91C49029D3A7B1008D47BD /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		6E91C49229D3A7FD008D47BD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		6E91C49429D3A8D7008D47BD /* AirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportView.swift; sourceTree = "<group>"; };
+		6E91C49729D3B251008D47BD /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				6E72912F29D34A2D00B72673 /* IATAApp.swift */,
-				6E72913129D34A2D00B72673 /* ContentView.swift */,
-				6E72913329D34A2E00B72673 /* Assets.xcassets */,
-				6E72913829D34A2E00B72673 /* IATA.entitlements */,
+				6E91C48D29D3A785008D47BD /* Models */,
+				6E91C48B29D3A772008D47BD /* ViewModels */,
+				6E91C48C29D3A77D008D47BD /* Views */,
+				6E91C49629D3B243008D47BD /* Utilities */,
+				6E91C48629D39676008D47BD /* Resources */,
+				6E91C48529D39611008D47BD /* Infrastructure */,
 				6E72913529D34A2E00B72673 /* Preview Content */,
 			);
 			path = IATA;
@@ -67,6 +84,58 @@
 				6E72913629D34A2E00B72673 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E91C48529D39611008D47BD /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6E72913829D34A2E00B72673 /* IATA.entitlements */,
+				6E72913329D34A2E00B72673 /* Assets.xcassets */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		6E91C48629D39676008D47BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E91C48729D39685008D47BD /* AirportIATA.json */,
+				6E91C49229D3A7FD008D47BD /* DummyData.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E91C48B29D3A772008D47BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6E91C48929D39CBD008D47BD /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6E91C48C29D3A77D008D47BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E91C47D29D395D3008D47BD /* MainView.swift */,
+				6E91C49429D3A8D7008D47BD /* AirportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E91C48D29D3A785008D47BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E91C48E29D3A79F008D47BD /* AirportContainer.swift */,
+				6E91C49029D3A7B1008D47BD /* Airport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E91C49629D3B243008D47BD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6E91C49729D3B251008D47BD /* Array+Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +198,7 @@
 			files = (
 				6E72913729D34A2E00B72673 /* Preview Assets.xcassets in Resources */,
 				6E72913429D34A2E00B72673 /* Assets.xcassets in Resources */,
+				6E91C48829D39685008D47BD /* AirportIATA.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E72913229D34A2D00B72673 /* ContentView.swift in Sources */,
+				6E91C49329D3A7FD008D47BD /* DummyData.swift in Sources */,
+				6E91C49129D3A7B1008D47BD /* Airport.swift in Sources */,
+				6E91C48A29D39CBD008D47BD /* MainViewModel.swift in Sources */,
+				6E91C49829D3B251008D47BD /* Array+Extensions.swift in Sources */,
+				6E91C48F29D3A79F008D47BD /* AirportContainer.swift in Sources */,
 				6E72913029D34A2D00B72673 /* IATAApp.swift in Sources */,
+				6E91C47E29D395D3008D47BD /* MainView.swift in Sources */,
+				6E91C49529D3A8D7008D47BD /* AirportView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = IATA/IATA.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IATA/Infrastructure/IATA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -274,6 +350,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = IATA/IATA.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IATA/Infrastructure/IATA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -301,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

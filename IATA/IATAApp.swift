@@ -6,13 +6,24 @@
 // ********************** IATAApp *********************************
 
 
+import Combine
 import SwiftUI
+import AppKit
+
+
+//https://sarunw.com/posts/swiftui-menu-bar-app/
+//https://itnext.io/swiftui-keyboard-shortcuts-and-menu-bar-be22abbb3791
 
 @main
-struct IATAApp: App {
+struct MenuBarApp: App {
+    
+    @StateObject var vm = MainViewModel()
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("IATA", systemImage: "globe.americas.fill") {
+            MainView(vm: vm)
         }
+        .menuBarExtraStyle(.window)
     }
+    
 }
